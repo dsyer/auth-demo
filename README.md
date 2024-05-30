@@ -11,6 +11,7 @@ $ kubectl apply -f config/account.yaml
 Manually fish out a token:
 
 ```
+$ kubectl apply -f config/account.yaml
 $ KUBERNETES_HOST=`kubectl -n kube-system get pod -l component=kube-apiserver -o=jsonpath="{.items[0].metadata.annotations.kubeadm\.kubernetes\.io/kube-apiserver\.advertise-address\.endpoint}"`
 $ TOKEN=`kubectl create token -n spring-system default`
 ```
