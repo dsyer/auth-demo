@@ -13,7 +13,7 @@ class AuthDemoApplicationTests {
 
 	public static void main(String[] args) {
 		System.setProperty("spring.main.cloud-platform", "kubernetes");
-		System.setProperty("kubernetes.service.host", "localhost:43319");
+		// System.setProperty("kubernetes.service.host", "localhost:43319");
 		System.setProperty("management.kubernetes.skip-ssl-validation", "true");
 		SpringApplication.run(AuthDemoApplication.class);
 	}
