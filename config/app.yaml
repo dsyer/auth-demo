@@ -17,6 +17,9 @@ spec:
       containers:
       - name: app
         image: localhost:5000/app:latest
+        env:
+        - name: DEBUG
+          value: "true"
         ports:
         - containerPort: 8080
           name: http
